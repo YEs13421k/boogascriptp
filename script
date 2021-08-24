@@ -1,0 +1,226 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local colors = {
+    SchemeColor = Color3.fromRGB(75, 99, 135),
+    Background = Color3.fromRGB(30, 32, 38),
+    Header = Color3.fromRGB(24, 25, 29),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(31, 30, 37)
+}
+local Window = Library.CreateLib("Fraxity", colors)
+local Home = Window:NewTab("Home")
+local Home = Home:NewSection("Home")
+local AutoEat = Window:NewTab("AutoEat")
+local AutoEat = AutoEat:NewSection("AutoEat")
+local Dupe = Window:NewTab("Dupe")
+local Dupe = Dupe:NewSection("Items")
+local Recipe = Window:NewTab("Recipe")
+local Recipe = Recipe:NewSection("Magnetite Recipe")
+local Farm = Window:NewTab("Farm")
+local Farm = Farm:NewSection("Not Working")
+Home:NewButton("Version: v5.5", "Version", function()
+    print("Version 5.5")
+end)
+Home:NewButton("UI Credits: SelexityHub", "SelexityHub", function()
+    
+end)
+Home:NewButton("Gui Made By: Testerextra", "Testerextra", function()
+    
+end)
+Home:NewButton("Youtube: Roblox Scripts", "Subscribe", function()
+    
+end)
+Home:NewButton("BoogaBoogaGui (Click Me!)", "SecondGui", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/da1ME3cZ"))();
+end)
+Home:NewKeybind("ToggleGui", "UIBind", Enum.KeyCode.B, function()
+	Library:ToggleUI()
+end)
+AutoEat:NewKeybind("AutoEat", "BloodFruit", Enum.KeyCode.R, function()
+local args = {
+    [1] = "Bloodfruit"
+}
+
+game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer(unpack(args))
+
+end)
+Dupe:NewButton("Gold Bar", "Need 2 Items To dupe it", function()
+     local Item = "Gold Bar"
+	local amount = 1.9
+	local price = 100000
+	game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+end)
+Dupe:NewButton("Spirit Key", "Need 2 Items To dupe it", function()
+     local Item = "Spirit Key"
+	local amount = 1.9
+	local price = 100000
+	game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+end)
+Dupe:NewButton("Goober Bag", "Need 2 Items To dupe it", function()
+     local Item = "Goober Bag"
+	local amount = 1.9
+	local price = 100000
+	game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+end)
+Dupe:NewButton("Radio Pack", "Need 2 Items To dupe it", function()
+     local Item = "Radio Pack"
+	local amount = 1.9
+	local price = 100000
+	game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+end)
+Dupe:NewButton("Search In Youtube: MikuXploits chests dupe", "If you like to dupe chests", function()
+    
+end)
+Recipe:NewButton("Magnetite Mask", "ButtonInfo", function()
+     local A_1   = "Magnetite Mask"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Magnetite Chestplate", "ButtonInfo", function()
+     local A_1   = "Magnetite Chestplate"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Magnetite Greaves", "ButtonInfo", function()
+     local A_1   = "Magnetite Greaves"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Magnetite Pick", "ButtonInfo", function()
+     local A_1   = "Magnetite Pick"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Magnetite Axe", "ButtonInfo", function()
+     local A_1   = "Magnetite Axe"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Magnetite Stick", "ButtonInfo", function()
+     local A_1   = "Magnetite Stick"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Magnetite Bag", "ButtonInfo", function()
+     local A_1   = "Magnetite Bag"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Magnetite Crossbow", "ButtonInfo", function()
+     local A_1   = "Magnetite Crossbow"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Bolt", "ButtonInfo", function()
+     local A_1   = "Bolt"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+local RecipeSection = Recipe:NewSection("Crystal Recipe")
+Recipe:NewButton("Crystal Crown", "ButtonInfo", function()
+     local A_1   = "Crystal Crown"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Crystal Chestplate", "ButtonInfo", function()
+     local A_1   = "Crystal Chestplate"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Crystal Greaves", "ButtonInfo", function()
+     local A_1   = "Crystal Greaves"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Crystal Pick", "ButtonInfo", function()
+     local A_1   = "Crystal Pick"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Crystal Axe", "ButtonInfo", function()
+     local A_1   = "Crystal Axe"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Crystal Stick", "ButtonInfo", function()
+     local A_1   = "Crystal Stick"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Crystal Bag", "ButtonInfo", function()
+     local A_1   = "Crystal Bag"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+local RecipeSection = Recipe:NewSection("Adurite Recipe")
+Recipe:NewButton("Adurite Helmet", "ButtonInfo", function()
+     local A_1   = "Adurite Helmet"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Adurite Chestplate", "ButtonInfo", function()
+     local A_1   = "Adurite Chestplate"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Adurite Greaves", "ButtonInfo", function()
+     local A_1   = "Adurite Greaves"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Adurite Pick", "ButtonInfo", function()
+     local A_1   = "Adurite Pick"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Adurite Axe", "ButtonInfo", function()
+     local A_1   = "Adurite Axe"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("War Hammer", "ButtonInfo", function()
+     local A_1   = "War Hammer"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Adurite Bag", "ButtonInfo", function()
+     local A_1   = "Adurite Bag"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+local RecipeSection = Recipe:NewSection("Iron Recipe")
+Recipe:NewButton("Iron Helmet", "ButtonInfo", function()
+     local A_1   = "Iron  Helmet"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Iron Chestplate", "ButtonInfo", function()
+     local A_1   = "Iron Chestplate"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Iron Greaves", "ButtonInfo", function()
+     local A_1   = "Iron Greaves"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Iron Pick", "ButtonInfo", function()
+     local A_1   = "Iron Pick"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Iron Axe", "ButtonInfo", function()
+     local A_1   = "Iron Axe"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+Recipe:NewButton("Iron Bag", "ButtonInfo", function()
+     local A_1   = "Iron Bag"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
+local Recipe = Recipe:NewSection("More Recipe")
+Recipe:NewButton("Goober Bag", "Need 500 Morsel", function()
+     local A_1   = "Goober Bag"
+     local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+     Event:FireServer(A_1)
+end)
